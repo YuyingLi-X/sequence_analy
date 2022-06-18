@@ -1,8 +1,18 @@
-This is the pipeline for sequence analysis, including fastqc, flash2, kraken2, bracken, multiqc and heatmap.
+# MedBioinfo 2022 Applied Bioinformatics
+## Shared git repo for the pipeline of sequence analysis, including fastqc, flash2, kraken2, bracken, multiqc and heatmap.
 
-Input:	A set of FastQ files (paired) compressed or not
-Output:	multiqc report, an HTML file;
-        taxonomy heatmap, a pdf file.
+**Input:**	A set of FastQ files (paired) compressed or not
+**Output:**	multiqc report, an HTML file;
+        	taxonomy heatmap, a pdf file.
+### Data source
+
+Data is from Daniel Castañeda-Mogollón et al. Dec 2021 https://www.sciencedirect.com/science/article/pii/S1386653221002924
+
+Samples (either Nasopharyngeal or Throat swabs) from 125 patients, either COVID+ or COVID- by RT-PCR, were subjected to Illumina sequencing (one RNA and one DNA sequencing run for each patient).
+
+#### Initial data
+ - the NCBI raw sample metadata annotation file (downloaded from [NCBI SRA](https://trace.ncbi.nlm.nih.gov/Traces/study/?acc=PRJEB47870)) is in ```data/SraRunTable.csv```
+ - the EBI ENA sample metadata annotation file (downloaded from [EBI ENA](https://www.ebi.ac.uk/ena/browser/view/PRJEB47870?show=reads)) is in ```data/filereport_read_run_PRJEB47870.tsv```
 
 # Installation
 ```
