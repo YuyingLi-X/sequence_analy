@@ -1,8 +1,11 @@
 # MedBioinfo 2022 Applied Bioinformatics
 This is a shared git repo for the pipeline of sequence analysis, including fastqc, flash2, kraken2, bracken, multiqc and heatmap(see file dag.svg for visualization).
+
 **Input:**	A set of FastQ files (paired and compressed)
+
 **Output:**	multiqc report, an HTML file;
         	taxonomy heatmap, a pdf file.
+
 ### Data source
 
 Data is from Daniel Castañeda-Mogollón et al. Dec 2021 https://www.sciencedirect.com/science/article/pii/S1386653221002924
